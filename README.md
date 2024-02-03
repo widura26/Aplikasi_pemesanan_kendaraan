@@ -1,6 +1,6 @@
 ## Panduan Penggunaan Aplikasi
 
-- Database version : 
+- Database version :  10.4.24-MariaDB-log
 - PHP version : 8.1.6
 - Framework : Laravel 10
 
