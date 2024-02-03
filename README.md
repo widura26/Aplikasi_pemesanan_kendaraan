@@ -6,10 +6,17 @@
 
 - Install dependencies :
 
-1. clone dari repository
-2. Jalan perintah php artisan key:generate
-3. Jalan perintah composer install
-4. Tambahkan dependencies spatie
+1. Clone repository Laravel dari folder yang diinginkan.
+2. Import folder tersebut dan buka menggunakan code editor, contohnya Visual Studio code.
+3. Salin file '.env.example' dan beri nama salinannya sebagai '.env'
+4. Di dalam file '.env', ubah nilai variabel DB_DATABASE sesuai keinginan (contoh : db_aplikasi_pemesanan_kendaraan)
+5. Jalankan perintah `composer install` untuk menginstal dependensi PHP.
+6. Setelah itu jalankan perintah <b>`php artisan key:generate`</b> untuk menghasilkan kunci aplikasi.
+7. Lalukan migrasi database dengan perintah  `php artisan migrate`. Ini akan membuat tabel-tabel yang diperlukan dalam aplikasi ke dalam database MySQL.
+8. Lakukan seeding database dengan perintah  `php artisan db:seed`. Ini akan membuat beberapa data palsu yang dapat digunakan untuk melakukan testing.
+9. Instal package JavaScript dengan perintah  `npm install`.
+10. Jalan perintah `npm run dev` untuk menjalankan Tailwind CSS
+11. Terakhir, jalankan server lokal dengan perintah  `php artisan serve`
 
 - Cara mengakses aplikasi :
 
