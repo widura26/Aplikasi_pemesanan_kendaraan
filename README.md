@@ -8,7 +8,8 @@
 
 1. clone dari repository
 2. Jalan perintah php artisan key:generate
-3. Jalan perintah composer install 
+3. Jalan perintah composer install
+4. Tambahkan dependencies spatie
 
 - Panduan mengakses aplikasi :
 
