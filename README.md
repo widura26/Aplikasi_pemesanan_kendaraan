@@ -11,7 +11,7 @@
 3. Jalan perintah composer install
 4. Tambahkan dependencies spatie
 
-- Panduan mengakses aplikasi :
+- Cara mengakses aplikasi :
 
 1. Buka aplikasi di browser dan ketik alamat http://localhost:8000. Sistem akan menampilkan halaman home.
 2. Klik tombol login untuk melakukan autentikasi user yang telah terdaftar.
