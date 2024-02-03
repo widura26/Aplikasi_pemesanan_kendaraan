@@ -6,7 +6,9 @@
             <th class=" p-2">Pihak yang menyetujui</th>
             <th class=" p-2">Tanggal Penyewaan</th>
             <th class=" p-2">Status</th>
-            <th class=" p-2">Hapus</th>
+            @if (auth()->check() && auth()->user()->hasRole('admin'))
+                <th class=" p-2">Hapus</th>
+            @endif
         </tr>
     </thead>
     <tbody id="bookList">
@@ -15,7 +17,7 @@
                     <td class="p-3 max-w-xs overflow-hidden overflow-ellipsis whitespace-nowrap">{{ $data->kendaraan->nama_kendaraan }}</td>
                     <td class="p-3">{{ $data->driver}}</td>
                     <td class="p-3">{{ $data->atasan->username}}</td>
-                    <td class="p-3">{{ $data->tanggal_pemesanan }}</td>
+                    <td class="p-3">{{  date('j F Y', strtotime($data->tanggal_pemesanan)) }}</td>
 
                     @if (auth()->check() && auth()->user()->hasRole('atasan'))
                         <td class="p-3">
@@ -82,7 +84,9 @@
                             <button class="py-2 px-4 rounded-lg text-white {{ $data->status === 0 ? 'bg-red-400' : 'bg-blue-500'  }}" disabled>{{ $data->status === 0 ? 'Belum disetujui' : 'Disetujui' }}</button>
                         </td>
                     @endif
+                    @if (auth()->check() && auth()->user()->hasRole('admin'))
                         <td><span class="material-symbols-outlined cursor-pointer" onclick="window.location.href='{{ route('deletePemesanan', $data->id) }}'">delete</span></td>
+                    @endif
                 </tr>
             @endforeach
     </tbody>
