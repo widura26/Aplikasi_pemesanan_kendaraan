@@ -7,11 +7,11 @@
 - Install dependencies :
 
 1. Clone repository Laravel dari folder yang diinginkan.
-2. Import folder tersebut dan buka menggunakan code editor, contohnya Visual Studio code.
-3. Salin file '.env.example' dan beri nama salinannya sebagai '.env'
+2. Import folder tersebut dan buka menggunakan code editor, contohnya Visual Studio Code.
+3. Salin file `.env.example` dan beri nama salinannya sebagai `.env`
 4. Di dalam file '.env', ubah nilai variabel DB_DATABASE sesuai keinginan (contoh : db_aplikasi_pemesanan_kendaraan)
 5. Jalankan perintah `composer install` untuk menginstal dependensi PHP.
-6. Setelah itu jalankan perintah <b>`php artisan key:generate`</b> untuk menghasilkan kunci aplikasi.
+6. Setelah itu jalankan perintah `php artisan key:generate` untuk menghasilkan kunci aplikasi.
 7. Lalukan migrasi database dengan perintah  `php artisan migrate`. Ini akan membuat tabel-tabel yang diperlukan dalam aplikasi ke dalam database MySQL.
 8. Lakukan seeding database dengan perintah  `php artisan db:seed`. Ini akan membuat beberapa data palsu yang dapat digunakan untuk melakukan testing.
 9. Instal package JavaScript dengan perintah  `npm install`.
@@ -32,12 +32,12 @@
 
 4. Setelah berhasil masuk, halaman dashboard akan menampilkan data-data tentang Jumlah User, Kendaraan dan grafik penggunaan kendaraan.
 5. Di bagian navbar, ada beberapa menu antara lain Daftar penyewaan, Kendaraan, dan logout.
-7. kita masuk ke menu Kendaraan. Di Halaman tersebut ditampilkan daftar kendaraan yang dikelola oleh Badan Pengelolaan Kendaraan. Ada fitur menginputkan pemesanan penyewaan kendaraan. Untuk mengetahui apakah kendaraan tersebut sedang disewa atau tidak, di tabel tersebut terdapat kolom yang menunjukkan tiga keterangan, yaitu status disewa, artinya kendaraan sedang digunakan oleh pegawai dan telah disetujui oleh pihak yang menyetujui. Lalu status Belum disetujui, artinya kendaraan tersebut sudah dipesan namun belum disetujui oleh pihak yang menyetujui. Status terakhir yaitu tersedia. Artinya kendaraan tersebut tersedia dan tidak ada pegawai yang menggunakannya. Selain itu, kita juga dapat memeriksa tombol pesan. Jika status kendaraan tersebut disewa atau belum disetujui, tombol pesan tidak akan bisa diakses. Begitu pun sebaliknya, jika status kendaraan tersedia, maka tombol pesan dapat diakses.
+7. Masuk ke menu Kendaraan. Di Halaman tersebut ditampilkan daftar kendaraan yang dikelola oleh Badan Pengelolaan Kendaraan. Ada fitur menginputkan pemesanan penyewaan kendaraan. Untuk mengetahui apakah kendaraan tersebut sedang disewa atau tidak, di tabel tersebut terdapat kolom yang menunjukkan tiga keterangan, yaitu status disewa, artinya kendaraan sedang digunakan oleh pegawai dan telah disetujui oleh pihak yang menyetujui. Lalu status Belum disetujui, artinya kendaraan tersebut sudah dipesan namun belum disetujui oleh pihak yang menyetujui. Status terakhir yaitu tersedia. Artinya kendaraan tersebut tersedia dan tidak ada pegawai yang menggunakannya. Selain itu, kita juga dapat memeriksa tombol pesan. Jika status kendaraan tersebut disewa atau belum disetujui, tombol pesan tidak akan bisa diakses. Begitu pun sebaliknya, jika status kendaraan tersedia, maka tombol pesan dapat diakses.
 8. Coba klik tombol Pesan untuk menginputkan pemesanan kendaraan. Nantinya akan muncul modal / pop up box yang berisi form untuk menginputkan pesanan. Ada field nama kendaraan yang sudah ada nilainya, field driver atau sopir, pihak yang menyetujui, dan tanggal pemesanan. Setelah semuanya terisi, klik tambah. Otomatis keterangan atau status kendaraan berubah menjadi belum disetujui.
-9. Beralih ke menu daftar penyewaan. Di menu tersebut, data yang telah kita tambahkan tadi telah muncul.
-10. Berdasarkan data yang telah ditambahkan tadi, lihat atasan atau pihak yang menyetujui. Jika atasannya adalah atasan 2, Maka dari itu, kita login pada akun atasan 2 untuk mengkonfirmasi atau menyetujui penyewaan.
-11. Langsung saja, kita masukkan username dan password dari atasan 2 lalu klik login.
-12. Sistem akan menampilkan dashboard seperti admin tadi. Setelah itu kita pergi ke daftar penyewaan yang ada di navbar. Sama seperti Admin, sistem akan menampilkan daftar penyewaan. Bedanya, daftar penyewaan yang ditampilkan hanyalah penyewaan yang harus disetujui oleh atasan 2. Klik tombol merah yang bertuliskan Belum disetujui. Nantinya akan muncul pop up box yang berisikan dua tombol radio, Disetujui dan belum disetujui. klik tombol radio Disetujui. Setelah itu klik tombol Simpan. Otomatis tombol merah tadi berubah menjadi biru, tanda atasan telah menyetujui pemesanan kendaraan tersebut. 
+9. Beralih ke menu daftar penyewaan. Di menu tersebut, data yang telah ditambahkan tadi telah muncul.
+10. Berdasarkan data yang telah ditambahkan tadi, lihat atasan atau pihak yang menyetujui. Jika atasannya adalah atasan 2, Maka dari itu, login pada akun atasan 2 untuk mengkonfirmasi atau menyetujui penyewaan.
+11. Langsung saja, masukkan username dan password dari atasan 2 lalu klik login.
+12. Sistem akan menampilkan dashboard seperti admin tadi. Setelah itu pergi ke daftar penyewaan yang ada di navbar. Sama seperti Admin, sistem akan menampilkan daftar penyewaan. Bedanya, daftar penyewaan yang ditampilkan hanyalah penyewaan yang harus disetujui oleh atasan 2. Klik tombol merah yang bertuliskan Belum disetujui. Nantinya akan muncul pop up box yang berisikan dua tombol radio, Disetujui dan belum disetujui. klik tombol radio Disetujui. Setelah itu klik tombol Simpan. Otomatis tombol merah tadi berubah menjadi biru, tanda atasan telah menyetujui pemesanan kendaraan tersebut. 
 
 
 
